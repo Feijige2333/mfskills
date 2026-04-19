@@ -2,9 +2,10 @@
 
 <div align="center">
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=flat-square)](https://github.com/yourusername/skills)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=flat-square)](https://github.com/Feijige2333/mfskills)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+[![GitHub stars](https://img.shields.io/github/stars/Feijige2333/mfskills.svg?style=social)](https://github.com/Feijige2333/mfskills)
 
 智能 AI 开发流程调度系统，协调产品经理、UI设计师、全栈开发工程师、邮件通知、魔方模板开发、魔方财务插件等专业技能包
 
@@ -54,19 +55,20 @@
 
 ### 安装使用
 
-1. 克隆或下载项目到本地
+1. 克隆项目到本地
 
 ```bash
-cd d:\桌面\skills
+git clone https://github.com/Feijige2333/mfskills.git
+cd mfskills
 ```
 
-1. 查看可用指令
+2. 查看可用指令
 
 ```bash
 /help
 ```
 
-1. 开始你的第一个项目
+3. 开始你的第一个项目
 
 ```bash
 /prd
@@ -93,27 +95,32 @@ cd d:\桌面\skills
 
 ```mermaid
 graph TD
-    A[用户说出想法] --> B[/prd - 需求收集]
-    B --> C[自动生成 Product-Spec.md]
-    C --> D[自动生成 Product-Spec-CHANGELOG.md]
-    D --> E[/ui - 原型设计]
-    E --> F[生成 UI-Prompts.md]
-    F --> G[/dev - 开发代码]
-    G --> H[实现功能代码]
-    H --> I[/run - 本地运行]
-    I --> J[验证功能，报告结果]
+    A["用户说出想法"] --> B["/prd - 需求收集"]
+    B --> C["生成 Product-Spec.md"]
+    C --> D["生成 CHANGELOG.md"]
+    D --> E["/ui - 原型设计"]
+    E --> F["生成 UI-Prompts.md"]
+    F --> G["/dev - 开发代码"]
+    G --> H["实现功能代码"]
+    H --> I["/run - 本地运行"]
+    I --> J["验证功能，报告结果"]
 ```
 
 ### 迭代开发流程（有 Product-Spec.md）
 
 ```mermaid
 graph TD
-    A[用户提出修改需求] --> B[/prd - 迭代模式]
-    B --> C[更新 Product-Spec.md]
-    C --> D[更新 Product-Spec-CHANGELOG.md]
-    D --> E[自动调用 /dev]
-    E --> F[开发工程师实现代码]
-    F --> G[文档和代码同步]
+    A["用户提出修改需求"] --> B["/prd - 迭代模式"]
+    B --> C["更新 Product-Spec.md"]
+    C --> D["更新 CHANGELOG.md"]
+    D --> E{是否需要自动开发?}
+    E -->|是| F["自动调用 /dev"]
+    E -->|否| G["等待用户指令"]
+    F --> H["开发工程师实现代码"]
+    H --> I["文档和代码同步"]
+    
+    style A fill:#FF9800
+    style I fill:#4CAF50
 ```
 
 ## 📁 项目结构
@@ -162,7 +169,9 @@ skills/
 
 ## 💬 联系方式
 
-- 项目 GitHub：<https://github.com/yourusername/skills>
+- 项目 GitHub：<https://github.com/Feijige2333/mfskills>
+- 问题反馈：[Issues](https://github.com/Feijige2333/mfskills/issues)
+- 讨论社区：[Discussions](https://github.com/Feijige2333/mfskills/discussions)
 
   <br />
 

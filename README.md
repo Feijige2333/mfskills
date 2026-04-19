@@ -170,8 +170,8 @@ skills/
 ## 💬 联系方式
 
 - 项目 GitHub：<https://github.com/Feijige2333/mfskills>
-- 问题反馈：[Issues](https://github.com/Feijige2333/mfskills/issues)
-- 讨论社区：[Discussions](https://github.com/Feijige2333/mfskills/discussions)
+- 问题反馈：QQ:2685983982
+- 云服务：hyw.info
 
   <br />
 
